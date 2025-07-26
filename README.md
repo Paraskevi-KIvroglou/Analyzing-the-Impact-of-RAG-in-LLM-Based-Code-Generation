@@ -8,7 +8,13 @@ This repository contains source code and experimental scripts related to the exp
 
 **Paper Type:** Master's Thesis
 
+## Contact and Collaboration
 
+Provide contact information for follow-up research:
+
+Email: [paraskevikivroglou@gmail.com]
+
+Supervisor: [Prof. Dr. Martin, Simon] ([simon.martin@iu.org])
 
 
 
