@@ -1,7 +1,7 @@
 # Analyzing the Impact of RAG in LLM-Based Code Generation
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Benchmark](https://img.shields.io/badge/Benchmark-MBPP%2B-orange)](https://github.com/evalplus/evalplus)
 
 > **Master's Thesis Research** | IU University of Applied Sciences | M.Sc. Artificial Intelligence
