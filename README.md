@@ -6,7 +6,7 @@
 
 > **Master's Thesis Research** | IU University of Applied Sciences | M.Sc. Artificial Intelligence
 
-This repository contains the complete implementation and experimental results from my Master's thesis investigating how **Retrieval Augmented Generation (RAG)** and **self-evaluation techniques** enhance Large Language Model performance in code generation tasks [file:1].
+This repository contains the complete implementation and experimental results from my Master's thesis investigating how **Retrieval Augmented Generation (RAG)** and **self-evaluation techniques** enhance Large Language Model performance in code generation tasks.
 
 **Authors:** [Paraskevi Kivroglou]¹, [Prof. Dr. Martin, Simon]¹, [Prof. Dr-Ing. Schlippe, Tim,]¹
 
@@ -16,16 +16,16 @@ This repository contains the complete implementation and experimental results fr
 
 ## 🎯 Key Findings
 
-- **10.11% improvement** over baseline using optimized RAG with Qwen 2.5-Coder on MBPP+ benchmark [file:1]
-- RAG combined with specific prompts and self-evaluation achieves **92.1% Pass@1** on 3K documents [file:1]
-- Scaling knowledge bases from 1K to 3K documents progressively enhances accuracy [file:1]
-- Self-evaluation alone reduces performance, but becomes powerful when combined with RAG [file:1]
+- **10.11% improvement** over baseline using optimized RAG with Qwen 2.5-Coder on MBPP+ benchmark
+- RAG combined with specific prompts and self-evaluation achieves **92.1% Pass@1** on 3K documents
+- Scaling knowledge bases from 1K to 3K documents progressively enhances accuracy
+- Self-evaluation alone reduces performance, but becomes powerful when combined with RAG
 
 ## 📊 Performance Results
 
 ### Overall Performance Across Document Counts
 
-![Performance by Document Count](images/pass-1_performance_document_count.jpg)
+![Performance by Document Count](images/pass@1_performance_document_count.png)
 
 *Figure: Pass@1 performance comparison across all scenarios with varying vector store sizes (1K, 2K, 3K documents)* [attached_image:8]
 
@@ -33,12 +33,12 @@ This repository contains the complete implementation and experimental results fr
 
 <table>
 <tr>
-<td><img src="images/pass-1_1000.jpg" alt="1K Documents Results" width="100%"/></td>
-<td><img src="images/pass-1_2000.jpg" alt="2K Documents Results" width="100%"/></td>
+<td><img src="images/pass@1_1000.png" alt="1K Documents Results" width="100%"/></td>
+<td><img src="images/pass@1_2000.png" alt="2K Documents Results" width="100%"/></td>
 </tr>
 <tr>
-<td><img src="images/pass-1_3000.jpg" alt="3K Documents Results" width="100%"/></td>
-<td><img src="images/pass-1_performance_document_count.jpg" alt="Combined Results" width="100%"/></td>
+<td><img src="images/pass@1_3000.png" alt="3K Documents Results" width="100%"/></td>
+<td><img src="images/pass@1_performance_document_count.png" alt="Combined Results" width="100%"/></td>
 </tr>
 </table>
 
@@ -52,7 +52,7 @@ This research evaluates **7 distinct scenarios** to isolate the impact of RAG, s
 
 Standard Qwen 2.5-Coder without any enhancements [file:1]
 
-<img src="images/scenario1.jpg" alt="Scenario 1a" width="400"/>
+<img src="images/scenario1a.png" alt="Scenario 1a" width="400"/>
 
 [attached_image:9]
 
@@ -62,7 +62,7 @@ Standard Qwen 2.5-Coder without any enhancements [file:1]
 
 Baseline with self-evaluation prompts (no RAG) [file:1]
 
-<img src="images/Scenario1b.jpg" alt="Scenario 1b" width="500"/>
+<img src="images/Scenario1b.png" alt="Scenario 1b" width="500"/>
 
 [attached_image:3]
 
@@ -72,7 +72,7 @@ Baseline with self-evaluation prompts (no RAG) [file:1]
 
 Introduction of RAG with standard prompting [file:1]
 
-<img src="images/scenario2a-new.jpg" alt="Scenario 2a" width="500"/>
+<img src="images/scenario2a-new.png" alt="Scenario 2a" width="500"/>
 
 [attached_image:10]
 
@@ -82,7 +82,7 @@ Introduction of RAG with standard prompting [file:1]
 
 RAG combined with self-evaluation for iterative refinement [file:1]
 
-<img src="images/scenario2b-new.jpg" alt="Scenario 2b" width="500"/>
+<img src="images/scenario2b-new.png" alt="Scenario 2b" width="500"/>
 
 [attached_image:4]
 
@@ -92,7 +92,7 @@ RAG combined with self-evaluation for iterative refinement [file:1]
 
 Optimized RAG with task-specific prompting strategies [file:1]
 
-<img src="images/scenario3a.jpg" alt="Scenario 3a" width="500"/>
+<img src="images/scenario3a.png" alt="Scenario 3a" width="500"/>
 
 [attached_image:1]
 
@@ -102,7 +102,7 @@ Optimized RAG with task-specific prompting strategies [file:1]
 
 **Best performing configuration** - combines all techniques [file:1]
 
-<img src="images/scenario3b.jpg" alt="Scenario 3b" width="600"/>
+<img src="images/scenario3b.png" alt="Scenario 3b" width="600"/>
 
 [attached_image:5]
 
@@ -112,7 +112,7 @@ Optimized RAG with task-specific prompting strategies [file:1]
 
 Adds code execution tool for runtime validation [file:1]
 
-<img src="images/scenario4-new.jpg" alt="Scenario 4" width="700"/>
+<img src="images/scenario4-new.png" alt="Scenario 4" width="700"/>
 
 [attached_image:12]
 
@@ -177,7 +177,6 @@ Adds code execution tool for runtime validation [file:1]
 
 - [Qwen 2.5-Coder](https://github.com/QwenLM/Qwen2.5-Coder)
 - [MBPP+ Benchmark](https://github.com/evalplus/evalplus)
-- [Full Thesis Document](link-to-thesis-pdf)
 
 ## Contact and Collaboration
 
@@ -185,7 +184,7 @@ Provide contact information for follow-up research:
 
 Email: [paraskevikivroglou@gmail.com]
 
-Supervisor: [Prof. Dr. Martin, Simon] ([simon.martin@iu.org])
+Supervisors: [Prof. Dr. Martin, Simon] ([simon.martin@iu.org]), [Prof. Dr-Ing. Schlippe, Tim,] ([tim.schlippe@iu.org])
 
 
 
