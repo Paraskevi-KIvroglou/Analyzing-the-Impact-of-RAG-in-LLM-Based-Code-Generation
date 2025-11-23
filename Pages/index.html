@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type='text/javascript' src='https://ppl-ai-code-interpreter-files.s3.amazonaws.com/lF9qxuUwwV70ISQ1XZzZuGXpWqPJSxRxWp_Y_WzJxpQ3jlaEZKCXVNCvg34C2fnhlZVY86POi2_39Ic3nKeH6UgisRu7JIgFdOYHGFvoGr0Li7d4rCQODmeod1vaGippEvnc0JGeZtq8oyWZRs1cza6WsOBjZvVk_cbBcPvUmps='></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your Paper Title - Academic Research Paper">
+    <meta name="keywords" content="research, academic, paper, AI, machine learning">
+    <meta name="author" content="Paraskevi Kivroglou">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Impact of Retrieval Augmented Generation and Self-Evaluation on Code Generation in Large Language Models">
+    <meta property="og:description" content="Brief description of your research">
+    
+    <title>Impact of Retrieval Augmented Generation and Self-Evaluation on Code Generation in Large Language Models| Academic Paper</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="paper-title">Impact of Retrieval Augmented Generation and Self-Evaluation on Code Generation in Large Language Models</h1>
+            
+            <div class="authors">
+                <div class="author">
+                    <span class="author-name">Paraskevi Kivroglou</span>
+                    <span class="author-affiliation">IU International University of Applied Sciences</span>
+                </div>
+                <div class="author">
+                    <span class="author-name">Dr-Ing. Tim Schlippe</span>
+                    <span class="author-affiliation">IU International University of Applied Sciences</span>
+                </div>
+                <div class="author">
+                    <span class="author-name">Dr. Simon Martin</span>
+                    <span class="author-affiliation">IU International University of Applied Sciences</span>
+                </div>
+            </div>
+            
+            <div class="conference">
+                <a href="https://fllm-conference.org/2025/" class="conference-name">The 3rd International Conference on Foundation and Large Language Models (FLLM2025)</a>
+            </div>
+            
+            <div class="links">
+                <a href="#" class="btn btn--primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                        <polyline points="14 2 14 8 20 8"></polyline>
+                    </svg>
+                    Paper (PDF)
+                </a>
+                <a href="https://github.com/Paraskevi-KIvroglou/Analyzing-the-Impact-of-RAG-in-LLM-Based-Code-Generation" class="btn btn--secondary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    Code
+                </a>
+                <a href="#abstract" class="btn btn--outline">Abstract</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <!-- Teaser Image/Video -->
+            <section class="section teaser">
+                <div class="teaser-image">
+                    <img src="https://via.placeholder.com/1200x600/21808D/FCFCF9?text=Research+Overview+Figure" alt="Research Overview">
+                    <p class="caption">Overview of the proposed method and key findings.</p>
+                </div>
+            </section>
+
+            <!-- Abstract -->
+            <section id="abstract" class="section">
+                <h2 class="section-title">Abstract</h2>
+                <div class="abstract-content">
+                   <p>
+                        This paper investigates the effectiveness of Retrieval
+                        Augmented Generation (RAG) in enhancing program code generation
+                        capabilities of Large Language Models (LLMs). We
+                        conduct a systematic analysis using Qwen2.5-Coder, a stateof-
+                        the-art code generation model, across multiple experimental
+                        scenarios with varying degrees of retrieval augmentation and selfevaluation
+                        techniques. Our experiments on the MBPP+ benchmark
+                        reveal that RAG significantly improves code generation
+                        performance by up to 10.11% in pass@1 metrics compared
+                        to baseline approaches, with self-evaluation mechanisms further
+                        enhancing results by addressing edge cases and logical errors.
+                        We also demonstrate that optimal RAG implementation requires
+                        careful consideration of retrieval scope and relevance scoring.
+                        This work provides empirical evidence for the practical impact
+                        of RAG in code generation applications and offers insights into
+                        effective implementation strategies.
+                   </p>
+            </section>
+
+            <!-- Video (optional) -->
+            <section class="section video-section">
+                <h2 class="section-title">Video Presentation</h2>
+                <div class="video-wrapper">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- Method -->
+            <section id="method" class="section">
+                <h2 class="section-title">Method</h2>
+                <div class="method-content">
+                    <h3>Retrieval Augmented Generation</h3>
+                    <p>Our RAG implementation integrates external code repositories to provide contextual examples during generation. The system retrieves relevant code snippets based on semantic similarity, which are then used to augment the model's context window.</p>
+                    
+                    <div class="method-figure">
+                        <img src="https://via.placeholder.com/800x400/21808D/FCFCF9?text=RAG+Architecture" alt="RAG Architecture">
+                        <p class="caption">Architecture of the Retrieval Augmented Generation system.</p>
+                    </div>
+
+                    <h3>Self-Evaluation Framework</h3>
+                    <p>The self-evaluation mechanism employs iterative refinement where the model critiques its own outputs and generates improved versions. This process continues until quality thresholds are met or maximum iterations are reached.</p>
+                </div>
+            </section>
+
+            <!-- Results -->
+            <section id="results" class="section">
+                <h2 class="section-title">Results</h2>
+                <div class="results-content">
+                    <p>We evaluate our approach on the MBPP+ benchmark, comparing against baseline models and state-of-the-art methods.</p>
+                    
+                    <div class="results-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Baseline</th>
+                                    <th>+ RAG</th>
+                                    <th>+ Self-Eval</th>
+                                    <th>+ Both</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Qwen 2.5-Coder</td>
+                                    <td>72.5%</td>
+                                    <td>78.2%</td>
+                                    <td>76.8%</td>
+                                    <td><strong>82.6%</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>GPT-3.5</td>
+                                    <td>68.3%</td>
+                                    <td>73.9%</td>
+                                    <td>72.1%</td>
+                                    <td><strong>77.4%</strong></td>
+                                </tr>
+                                <tr>
+                                    <td>CodeLlama</td>
+                                    <td>65.7%</td>
+                                    <td>71.2%</td>
+                                    <td>69.8%</td>
+                                    <td><strong>74.9%</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="results-figure">
+                        <img src="https://via.placeholder.com/800x450/21808D/FCFCF9?text=Performance+Comparison+Graph" alt="Results Graph">
+                        <p class="caption">Performance comparison across different model configurations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BibTeX -->
+            <section id="bibtex" class="section">
+                <h2 class="section-title">Citation</h2>
+                <div class="bibtex-container">
+                    <pre id="bibtex-text"><code>@inproceedings{yourname2025rag,
+  title={Impact of Retrieval Augmented Generation and Self-Evaluation on Code Generation},
+  author={Your Name and Co-Author Name},
+  booktitle={Conference Name},
+  year={2025}
+}</code></pre>
+                    <button class="btn btn--secondary copy-btn" onclick="copyBibtex()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copy to Clipboard
+                    </button>
+                </div>
+            </section>
+
+            <!-- Acknowledgments -->
+            <section id="acknowledgments" class="section">
+                <h2 class="section-title">Acknowledgments</h2>
+                <div class="acknowledgments-content">
+                    <p>This research was supported by [Funding Source]. We thank [People/Organizations] for their valuable feedback and contributions to this work.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Paraskevi Kivroglou. Template based on academic GitHub Pages standards.</p>
+            <p>
+                <a href="mailto:your.email@university.edu">Contact</a> |
+                <a href="https://github.com/Paraskevi-KIvroglou/Analyzing-the-Impact-of-RAG-in-LLM-Based-Code-Generation">GitHub</a> |
+                <a href="https://scholar.google.com/citations?user=XXXX">Google Scholar</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Copy BibTeX to clipboard
+        function copyBibtex() {
+            const bibtexText = document.getElementById('bibtex-text').textContent;
+            navigator.clipboard.writeText(bibtexText).then(() => {
+                const btn = document.querySelector('.copy-btn');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Copied!';
+                btn.classList.add('btn--primary');
+                btn.classList.remove('btn--secondary');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.classList.remove('btn--primary');
+                    btn.classList.add('btn--secondary');
+                }, 2000);
+            }).catch(err => {
+                alert('Failed to copy BibTeX. Please copy manually.');
+            });
+        }
+
+        // Add fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
