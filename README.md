@@ -184,7 +184,7 @@ Provide contact information for follow-up research:
 
 Email: [paraskevikivroglou@gmail.com]
 
-Supervisors: [Prof. Dr. Martin, Simon] ([simon.martin@iu.org]), [Prof. Dr-Ing. Schlippe, Tim,] ([tim.schlippe@iu.org])
+Supervisors: [Prof. Dr. Martin, Simon] , [Prof. Dr-Ing. Schlippe, Tim,] 
 
 
 
